@@ -1,0 +1,47 @@
+package QuizApplication;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Login extends JFrame{
+	Login(){
+		getContentPane().setBackground(Color.white);
+		setLayout(null);
+		
+		ImageIcon i1 = new ImageIcon(getClass().getResource("icons/login.jpeg"));
+		JLabel image = new JLabel(i1);
+		image.setBounds(0,0,600,500);
+		
+		add(image);
+		
+		JLabel heading = new JLabel("Simple Minds");
+		heading.setBounds(750,60,300,45);
+		heading.setFont(new Font("Lucida Calligraphy",Font.BOLD,35));
+		heading.setForeground(Color.blue);
+		
+		JLabel name = new JLabel("Enter Your Name");
+		name.setBounds(750,300,300,20);
+		name.setFont(new Font("Lucida Calligraphy",Font.BOLD,18));
+		name.setForeground(Color.blue);
+		add(name);
+		
+		
+		add(heading);
+		setSize(1200,500);
+		setLocation(200,150);
+		setVisible(true);
+	}	
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 new Login();
+
+	}
+
+}

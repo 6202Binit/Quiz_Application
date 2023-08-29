@@ -1,0 +1,30 @@
+package QuizApplication;
+
+import java.awt.Color;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Login extends JFrame{
+	Login(){
+		getContentPane().setBackground(Color.white);
+		
+		ImageIcon i1 = new ImageIcon(getClass().getResource("icons/login.jpeg"));
+		JLabel image = new JLabel(i1);
+		
+		add(image);
+		setSize(1200,700);
+		setLocation(200,150);
+		setVisible(true);
+	}	
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 new Login();
+
+	}
+
+}

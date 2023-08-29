@@ -1,0 +1,37 @@
+package QuizApplication;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class quiz extends JFrame{
+	quiz(){
+		setBounds(50,0,1400,850);
+		
+		getContentPane().setBackground(Color.white);
+		setLayout(null);
+		ImageIcon i1 = new ImageIcon(getClass().getResource("icons/quiz.jpg"));
+		JLabel image = new JLabel(i1);
+		image.setBounds(0,0,1440,391);
+		
+		add(image);
+		
+		JLabel qno = new JLabel("1");
+		qno.setBounds(100,450,50,30);
+		qno.setFont(new Font("Tahoma",Font.PLAIN,24));
+		add(qno);
+		
+		JLabel question = new JLabel("1");
+		question.setBounds(100,450,50,30);
+		question.setFont(new Font("Tahoma",Font.PLAIN,24));
+		add(question);
+		setVisible(true);
+		
+	}
+public static void main(String[]args) {
+	new quiz();
+}
+}
